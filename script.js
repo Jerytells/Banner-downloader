@@ -30,7 +30,12 @@ document.addEventListener("DOMContentLoaded", () => {
         "prueba2": "prueba2.png",
         "prueba3": "prueba3.png",
         "prueba4": "prueba4.png",
-        "prueba5": "prueba5.png"
+        "prueba5": "prueba5.png",
+        "prueba6": "prueba6.png",
+        "prueba7": "prueba7.png",
+        "prueba8": "prueba8.png",
+        "prueba9": "prueba9.png",
+        "prueba10": "prueba10.png"
     };
 
     // Función para actualizar la vista según la selección
