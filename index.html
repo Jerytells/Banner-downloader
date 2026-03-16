@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Hardest Banners</title>
+    <!-- Fuente Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Pantalla de carga con el logo girando -->
+    <div id="loader-wrapper">
+        <img src="logo.png" alt="Cargando..." class="loader">
+    </div>
+
+    <!-- Contenido Principal -->
+    <div id="main-content" class="hidden">
+        <img src="logo.png" class="top-right-logo" alt="Logo Top Hardest">
+        
+        <div class="rgb-wrapper">
+            <div class="rgb-animated-border"></div>
+            <main class="main-layout download-card">
+                <!-- Columna Izquierda: Área de Previews -->
+                <div class="left-column">
+                    <div class="preview-area" id="preview-container">
+                        <div id="default-gallery" class="gallery-vertical">
+                            <img src="prueba1.png" class="gallery-item" data-value="prueba1" alt="Top 1">
+                            <img src="prueba2.png" class="gallery-item" data-value="prueba2" alt="Top 2">
+                            <img src="prueba3.png" class="gallery-item" data-value="prueba3" alt="Top 3">
+                            <img src="prueba4.png" class="gallery-item" data-value="prueba4" alt="Top 4">
+                            <img src="prueba5.png" class="gallery-item" data-value="prueba5" alt="Top 5">
+                        </div>
+                        <img id="banner-preview" src="" alt="Vista previa" class="hidden">
+                    </div>
+                </div>
+
+                <!-- Columna Derecha: Filtros y Botón -->
+                <div class="right-column">
+                    <div class="filter-controls">
+                        <label for="player-select">Elige tu banner:</label>
+                        <div class="custom-dropdown" id="custom-dropdown">
+                            <div class="dropdown-selected" id="dropdown-selected">
+                                <span id="dropdown-text">-- Selecciona un jugador/nivel --</span>
+                                <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </div>
+                            <div class="dropdown-options hidden" id="dropdown-options">
+                                <div class="dropdown-option" data-value="prueba1">Top 1 - Banner 1</div>
+                                <div class="dropdown-option" data-value="prueba2">Top 2 - Banner 2</div>
+                                <div class="dropdown-option" data-value="prueba3">Top 3 - Banner 3</div>
+                                <div class="dropdown-option" data-value="prueba4">Top 4 - Banner 4</div>
+                                <div class="dropdown-option" data-value="prueba5">Top 5 - Banner 5</div>
+                            </div>
+                        </div>
+                        <!-- Input oculto para mantener la lógica original de JS -->
+                        <input type="hidden" id="player-select" value="">
+
+                        <button id="download-btn" disabled>Descargar Banner</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
