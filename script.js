@@ -26,16 +26,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Banners disponibles
     const banners = {
-        "prueba1": "prueba1.png",
-        "prueba2": "prueba2.png",
-        "prueba3": "prueba3.png",
-        "prueba4": "prueba4.png",
-        "prueba5": "prueba5.png",
-        "prueba6": "prueba6.png",
-        "prueba7": "prueba7.png",
-        "prueba8": "prueba8.png",
-        "prueba9": "prueba9.png",
-        "prueba10": "prueba10.png"
+        "top1": "assets/Zephyr - 1.png",
+        "top2": "assets/Hal  - 2.png",
+        "top3": "assets/Dest - 3.png",
+        "top4": "assets/WilsonMC - 4.png",
+        "top5": "assets/SavsxZ - 5.png",
+        "top6": "assets/Xpr0ShaderX GD - 6.png",
+        "top7": "assets/Lestram - 7.png",
+        "top8": "assets/Jdap18 - 8.png",
+        "top9": "assets/CesarGDD - 9.png",
+        "top10": "assets/SrSillir - 10.png",
+        "top11": "assets/Daniel - 11.png",
+        "top12": "assets/Benji - 12.png",
+        "top13": "assets/AndresGaming - 13.png",
+        "top14": "assets/Kuzz - 14.png"
     };
 
     // Función para actualizar la vista según la selección
@@ -71,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
             previewContainer.classList.add("empty");
             downloadBtn.disabled = true;
             playerSelect.value = "";
-            dropdownText.textContent = "-- Selecciona un jugador/nivel --";
+            dropdownText.textContent = "Selecciona un banner";
         }
     }
 

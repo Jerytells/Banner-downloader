@@ -394,14 +394,9 @@ button:disabled {
         margin-top: 10px; 
     }
 
-    /* En móvil, el logo lo centramos sobre la tarjeta en lugar de fijarlo en la esquina */
+    /* En móvil ocultamos el logo */
     .top-right-logo {
-        position: relative;
-        top: auto;
-        right: auto;
-        width: 60px;
-        margin: 0 auto 1.5rem auto;
-        display: block;
+        display: none;
     }
 
     /* En móvil mantenemos el RGB, solo ajustamos la tarjeta un poco */
